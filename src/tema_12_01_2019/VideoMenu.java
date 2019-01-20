@@ -1,15 +1,20 @@
-package videostore.tema;
+package tema_12_01_2019;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
 public class VideoMenu {
 
+    private Scanner reader = new Scanner(System.in);
+
 	public VideoMenu() {
-		
-		VideoStore.addVideo("The_Matrix");
-		VideoStore.addVideo("Godfather_II");
-		VideoStore.addVideo("Star_Wars_Episode_IV:_A_New_Hope");
+	}
+
+	public void start() {
+
+		VideoStore.addVideo("The Matrix");
+		VideoStore.addVideo("Godfather II");
+		VideoStore.addVideo("Star Wars Episode IV: A New Hope");
 		
 		
 		boolean x = false;
@@ -31,20 +36,17 @@ public class VideoMenu {
 				break;
 				
 			case 2: System.out.println("Type in the movie title you want to rent: ");
-			        Scanner reader2 = new Scanner(System.in);
-			        String title = reader2.next();
+			        String title = reader.nextLine();
 			        VideoStore.checkOut(title);
 				break;
 				
 			case 3: System.out.println("Type in the movie title you are returning: ");
-			        Scanner reader3 = new Scanner(System.in);
-			        String title1 = reader3.next();
+			        String title1 = reader.nextLine();
 			        VideoStore.checkIn(title1);
 				break;
 			
 			case 4: System.out.println("Enter the title of the video you want added: "); 
-			        Scanner reader1 = new Scanner(System.in);
-			        String name = reader1.next();
+			        String name = reader.nextLine();
 				    VideoStore.addVideo(name);
 				break;
 				
@@ -52,7 +54,5 @@ public class VideoMenu {
 				break;
 			}
 		}
-		
 	}
-
 }
