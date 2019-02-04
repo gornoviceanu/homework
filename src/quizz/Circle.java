@@ -15,6 +15,7 @@ public class Circle implements Shapes {
 		
 	}
 	
+	//metodele astea 5, overriden din Shapes, as fi vrut sa fie in DrawingTool, asa ai fi eliminat duplicarea
 	@Override
 	public void addShape() {
 		System.out.println("Introduceti raza: ");

@@ -1,7 +1,6 @@
 package quizz;
-import java.util.*;
 
-public interface Shapes {
+public interface Shapes { //numele de clase/interfete ar trebui sa fie la singular
 	void addShape();
 	double calculatePerimeter();
 	double calculateSurface();

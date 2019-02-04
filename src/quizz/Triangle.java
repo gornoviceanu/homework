@@ -43,6 +43,7 @@ public class Triangle implements Shapes {
 	
 	@Override
 	public double calculateSurface() {
+		//bad design, am zis ca o metoda ori modfica starea unui obiect, aici surface, ori returneaza ceva, in cazul asta tot surface, dar nu amandoua deodata
 		double p = this.perimeter / 2;
 		this.surface = Math.sqrt(p * (p - this.latura1) * (p - this.latura2) * (p - this.latura3));
 		return this.surface;
