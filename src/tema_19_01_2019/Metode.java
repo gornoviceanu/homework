@@ -1,4 +1,4 @@
-package testing.homework;
+package tema_19_01_2019;
 import java.util.Random;
 
 public class Metode {

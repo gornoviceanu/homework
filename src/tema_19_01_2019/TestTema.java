@@ -1,9 +1,8 @@
-package testing.homework;
+package tema_19_01_2019;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static java.lang.System.*;
+import static org.junit.Assert.assertEquals;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class TestTema {
 	
@@ -25,10 +24,6 @@ public class TestTema {
 		rezultat = Metode.indexOfCharacter(cuvant, caracter);
 		assertEquals(3, rezultat);
 	}
-	
-	
-	
-
 	
 	@Test
 	public void maxDiagonalaPrincipalaTest() {	
