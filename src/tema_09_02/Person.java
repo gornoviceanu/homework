@@ -1,4 +1,4 @@
-package collections;
+package tema_09_02;
 import java.util.*;
 
 public class Person {
@@ -66,17 +66,19 @@ public class Person {
 		map.put(p3, p3.hobbylist);
 		map.put(p4, p4.hobbylist);
 		
+		//bravo, esti primul la care vad lambda :D
 		map.keySet().forEach(name -> System.out.println(name));
-
 		
 		System.out.println("Introduceti numele.");
 		Scanner reader = new Scanner(System.in);
-		String numele = reader.next();
+		//nu mai vreau denumiri in romana
+		String name = reader.next();
 		String z = "";
 		reader.close();
+		
 		for (Person p : list) {
 			z = p.name;
-			if (z.equals(numele)) {
+			if (z.equals(name)) {
 				System.out.println(p.hobbiesToString());
 			}
 		}

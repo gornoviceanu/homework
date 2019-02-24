@@ -1,6 +1,6 @@
-package collections;
+package tema_09_02;
 
-public class Adress implements Interfata{
+public class Adress implements Interface{
 	private String name;
 
 	public Adress(String name) {

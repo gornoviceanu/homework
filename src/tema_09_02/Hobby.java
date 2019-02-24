@@ -1,4 +1,4 @@
-package collections;
+package tema_09_02;
 import java.util.*;
 
 public class Hobby {
