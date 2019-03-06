@@ -1,4 +1,4 @@
-package atm;
+package tema_atm_23_02;
 
 import java.util.Scanner;
 
@@ -9,8 +9,7 @@ public class AccountInterface {
 		return acc;
 	}
 
-	public AccountInterface(Account Object) {
-		Account acc = Object;
+	public AccountInterface(Account account) {
 		boolean exit = false;
 
 		while (exit == false) {
@@ -28,28 +27,28 @@ public class AccountInterface {
 			switch (option) {
 
 			case 1:
-				acc.withdraw();
-				exit = acc.askNewOperation();
+				account.withdraw();
+				exit = account.askNewOperation();
 				break;
 
 			case 2:
-				acc.deposit();
-				exit = acc.askNewOperation();
+				account.deposit();
+				exit = account.askNewOperation();
 				break;
 
 			case 3:
-				System.out.println(acc.getBalance());
-				exit = acc.askNewOperation();
+				System.out.println(account.getBalance());
+				exit = account.askNewOperation();
 				break;
 
 			case 4:
-				acc.payBill();
-				exit = acc.askNewOperation();
+				account.payBill();
+				exit = account.askNewOperation();
 				break;
 
 			case 5:
-				acc.setPIN();
-				exit = acc.askNewOperation();
+				account.setPIN();
+				exit = account.askNewOperation();
 				break;
 
 			case 6:
